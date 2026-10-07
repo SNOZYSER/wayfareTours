@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wayfare – Plan your trip, day by day</title>
+<meta name="description" content="Wayfare helps you plan trips with day-by-day itineraries, packing lists and shared notes.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  24/7 support: <a href="tel:+918921265580">+91 89212 65580</a> ·
+  <a href="mailto:support@wayfaretourstravels">support@wayfaretourstravels@gmail.com</a>
+</div>
+
+<header class="nav">
+  <a class="logo" href="#top">Wayfare Tours & Travels</a>
+  <nav aria-label="Main">
+    <a href="#how">How it works</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+    <a href="#plan" class="btn small">Start planning</a>
+  </nav>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Your whole trip, planned one day at a time.</h1>
+      <p>Pick a destination, set your dates and get a clear itinerary with places, timings and a packing list. No spreadsheets needed.</p>
+      <a href="#plan" class="btn">Plan my trip</a>
+      <a href="#destinations" class="link">Browse destinations</a>
+    </div>
+
+    <!-- Boarding-pass style sample itinerary -->
+    <article class="pass" aria-label="Sample itinerary">
+      <div class="pass-head">
+        <div><small>From</small><strong>BLR</strong></div>
+        <span class="plane" aria-hidden="true">✈</span>
+        <div><small>To</small><strong>GOA</strong></div>
+      </div>
+      <h2>Goa long weekend</h2>
+      <ol class="stops">
+        <li><time>Fri 09:30</time> Check in at Baga Beach stay</li>
+        <li><time>Fri 17:45</time> Sunset at Fort Aguada</li>
+        <li><time>Sat 08:00</time> Old Goa churches walk</li>
+        <li><time>Sat 20:00</time> Dinner in Panjim Latin Quarter</li>
+        <li><time>Sun 11:00</time> Spice plantation visit</li>
+      </ol>
+      <p class="pass-foot">3 days · 5 stops · 12 items packed</p>
+    </article>
+  </section>
+
+  <!-- How it works -->
+  <section id="how" class="section">
+    <h2>From idea to itinerary in three steps</h2>
+    <ol class="steps">
+      <li>
+        <h3>Choose where and when</h3>
+        <p>Enter your destination, travel dates and how many people are going.</p>
+      </li>
+      <li>
+        <h3>Add what you want to do</h3>
+        <p>Pick interests like food, beaches or trekking, then place each stop on the day that suits it.</p>
+      </li>
+      <li>
+        <h3>Pack and go</h3>
+        <p>Tick off your packing list and keep bookings and addresses in one notes page.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="section alt">
+    <h2>Popular destinations</h2>
+    <p class="lead">Ready-made starting points. Use one as is or change anything.</p>
+    <div class="filters" role="group" aria-label="Filter destinations">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="beach" aria-pressed="false">Beaches</button>
+      <button type="button" data-filter="mountains" aria-pressed="false">Mountains</button>
+      <button type="button" data-filter="heritage" aria-pressed="false">Heritage</button>
+      <button type="button" data-filter="nature" aria-pressed="false">Nature</button>
+    </div>
+    <p id="count" class="lead" aria-live="polite">Showing 10 destinations</p>
+    <div class="grid">
+      <article class="dest goa" data-type="beach">
+        <h3>Goa</h3>
+        <p>Beaches, forts and late dinners.</p>
+        <span>3 to 5 days</span>
+      <a class="go" href="#plan" data-dest="Goa, India">Plan this trip</a>
+      </article>
+      <article class="dest jaipur" data-type="heritage">
+        <h3>Jaipur</h3>
+        <p>Palaces, bazaars and rooftop views.</p>
+        <span>2 to 4 days</span>
+      <a class="go" href="#plan" data-dest="Jaipur, India">Plan this trip</a>
+      </article>
+      <article class="dest munnar" data-type="nature">
+        <h3>Munnar</h3>
+        <p>Tea hills, waterfalls and cool mornings.</p>
+        <span>2 to 3 days</span>
+      <a class="go" href="#plan" data-dest="Munnar, India">Plan this trip</a>
+      </article>
+      <article class="dest ladakh" data-type="mountains">
+        <h3>Ladakh</h3>
+        <p>High passes, monasteries and open sky.</p>
+        <span>6 to 9 days</span>
+      <a class="go" href="#plan" data-dest="Ladakh, India">Plan this trip</a>
+      </article>
+      <article class="dest udaipur" data-type="heritage">
+        <h3>Udaipur</h3>
+        <p>Lake palaces and sunset boat rides.</p>
+        <span>2 to 3 days</span>
+      <a class="go" href="#plan" data-dest="Udaipur, India">Plan this trip</a>
+      </article>
+      <article class="dest alleppey" data-type="nature">
+        <h3>Alleppey</h3>
+        <p>Houseboats through quiet backwaters.</p>
+        <span>2 to 3 days</span>
+      <a class="go" href="#plan" data-dest="Alleppey, India">Plan this trip</a>
+      </article>
+      <article class="dest rishikesh" data-type="mountains">
+        <h3>Rishikesh</h3>
+        <p>River rafting, yoga and Ganga aarti.</p>
+        <span>3 to 4 days</span>
+      <a class="go" href="#plan" data-dest="Rishikesh, India">Plan this trip</a>
+      </article>
+      <article class="dest andaman" data-type="beach">
+        <h3>Andaman Islands</h3>
+        <p>Clear water, coral and white sand.</p>
+        <span>5 to 7 days</span>
+      <a class="go" href="#plan" data-dest="Andaman Islands, India">Plan this trip</a>
+      </article>
+      <article class="dest hampi" data-type="heritage">
+        <h3>Hampi</h3>
+        <p>Ancient ruins among boulder hills.</p>
+        <span>2 to 3 days</span>
+      <a class="go" href="#plan" data-dest="Hampi, India">Plan this trip</a>
+      </article>
+      <article class="dest darjeeling" data-type="mountains">
+        <h3>Darjeeling</h3>
+        <p>Toy train rides and Himalayan views.</p>
+        <span>3 to 4 days</span>
+      <a class="go" href="#plan" data-dest="Darjeeling, India">Plan this trip</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="section">
+    <h2>Tour packages</h2>
+    <p class="lead">Prices are per person, based on two travellers sharing. Each package includes stay, local transport and every visit listed.</p>
+    <label class="sort">Sort by
+      <select id="sort">
+        <option value="featured">Featured</option>
+        <option value="low">Price: low to high</option>
+        <option value="high">Price: high to low</option>
+        <option value="short">Shortest trip first</option>
+      </select>
+    </label>
+    <div id="packageGrid" class="pkg-grid"></div>
+  </section>
+
+  <!-- Planner form -->
+  <section id="plan" class="section plan">
+    <div class="plan-copy">
+      <h2>Tell us about your trip</h2>
+      <p>Fill this in and we'll set up your first itinerary with suggested stops for each day.</p>
+    </div>
+
+    <form class="form" action="#" method="get">
+      <label>Destination
+        <input type="text" name="destination" placeholder="Goa, India" required>
+      </label>
+      <label>Package (optional)
+        <input type="text" name="package" placeholder="Pick one from Tour packages">
+      </label>
+      <div class="two">
+        <label>Start date <input type="date" name="start" required></label>
+        <label>End date <input type="date" name="end" required></label>
+      </div>
+      <div class="two">
+        <label>Travellers
+          <input type="number" name="people" min="1" max="20" value="2">
+        </label>
+        <label>Budget per person
+          <select name="budget">
+            <option>Under ₹10,000</option>
+            <option selected>₹10,000 to ₹25,000</option>
+            <option>₹25,000 to ₹50,000</option>
+            <option>Above ₹50,000</option>
+          </select>
+        </label>
+      </div>
+      <fieldset>
+        <legend>What do you enjoy?</legend>
+        <label class="chip"><input type="checkbox" name="i" value="food"> Food</label>
+        <label class="chip"><input type="checkbox" name="i" value="beach"> Beaches</label>
+        <label class="chip"><input type="checkbox" name="i" value="culture"> History and culture</label>
+        <label class="chip"><input type="checkbox" name="i" value="trek"> Trekking</label>
+        <label class="chip"><input type="checkbox" name="i" value="night"> Nightlife</label>
+      </fieldset>
+      <label>Email
+        <input type="email" name="email" placeholder="you@example.com" required>
+      </label>
+      <button class="btn" type="submit">Create my itinerary</button>
+    </form>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt faq">
+    <h2>Common questions</h2>
+    <details>
+      <summary>Can I change or cancel my booking?</summary>
+      <p>Yes. Call or email us with your package name and travel dates, and we will tell you what changes or refunds are possible.</p>
+    </details>
+    <details>
+      <summary>How do I pay?</summary>
+      <p>Pay a small deposit to confirm your booking and the balance before departure. We accept UPI, cards and net banking.</p>
+    </details>
+    <details>
+      <summary>Can I customise a package?</summary>
+      <p>Yes. Use the form above or message us, and we will add or swap visits, change the hotel or extend your stay.</p>
+    </details>
+    <details>
+      <summary>Who do I call if something goes wrong during my trip?</summary>
+      <p>Our support line is open 24 hours a day. Call the number below and an advisor will help right away.</p>
+    </details>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div>
+      <h2>Need help? Talk to us</h2>
+      <p class="lead">Speak to a trip advisor before you book or while you travel.</p>
+      <ul class="ways">
+        <li>
+          <strong>Support line</strong>
+          <a href="tel:+918921265580">+91 89212 65580</a>
+          <span>Open 24 hours, every day</span>
+        </li>
+        <li>
+          <strong>WhatsApp</strong>
+          <a href="https://wa.me/917994790987">Chat with an advisor</a>
+          <span>Daily, 8 am to 10 pm</span>
+        </li>
+        <li>
+          <strong>Email</strong>
+          <a href="mailto:support@wayfaretourstravels">support@wayfaretourstravels</a>
+          <span>We reply within one working day</span>
+        </li>
+        <li>
+          <strong>Office</strong>
+          <address>Kattakada, Bengaluru, Karnataka 560054</address>
+          <span>Monday to Saturday, 10 am to 6 pm</span>
+        </li>
+      </ul>
+    </div>
+
+    <form id="contactForm" class="form" action="https://formspree.io/f/xjyggond" method="POST">
+      <h3>Send us a message</h3>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+      <label>Your name <input type="text" name="name" required></label>
+      <div class="two">
+        <label>Email <input type="email" name="email" required></label>
+        <label>Phone <input type="tel" name="phone" placeholder="+91"></label>
+      </div>
+      <label>Topic
+        <select name="topic">
+          <option>Booking a package</option>
+          <option>Change or cancel a booking</option>
+          <option>Custom trip request</option>
+          <option>Payment help</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>Message <textarea name="message" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Send message</button>
+      <p id="sent" class="sent" role="status" hidden></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <strong>Wayfare</strong>
+  <p>Trip planning made simple.</p>
+  <nav aria-label="Footer">
+    <a href="#how">How it works</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#plan">Plan a trip</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p>Support: <a href="tel:+918921265580">+91 8921265580</a> · <a href="mailto:support@wayfaretourstravels">support@wayfaretourstravels</a></p>
+  <small>© 2026 Wayfare</small>
+</footer>
+
+<a class="help-fab" href="tel:+918921265580">Call support</a>
+<script src="script.js"></script>
+</body>
+</html>
